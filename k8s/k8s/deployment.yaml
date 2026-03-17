@@ -12,10 +12,8 @@ spec:
       labels:
         app: myapp
     spec:
-      imagePullSecrets:
-        - name: harbor-reg
       containers:
-        - name: myapp
-          image: 10.13.160.228:80/myproject/myapp:latest
-          ports:
-            - containerPort: 80
+      - name: myapp
+        image: 10.13.162.250/myproject/myapp:latest
+        ports:
+        - containerPort: 80
