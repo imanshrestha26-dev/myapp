@@ -13,9 +13,9 @@ spec:
         app: myapp
     spec:
       imagePullSecrets:
-        - name: harbor-reg
+        - name: regcred
       containers:
         - name: myapp
-          image: 10.13.160.228:80/myproject/myapp:latest
+          image: 10.13.163.49:80/myproject/myapp:latest
           ports:
             - containerPort: 80
